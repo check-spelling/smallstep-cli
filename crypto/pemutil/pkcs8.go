@@ -72,13 +72,13 @@ type pbes2Params struct {
 	EncryptionScheme  pbkdf2Encs
 }
 
-type encryptedlAlgorithmIdentifier struct {
+type encryptedAlgorithmIdentifier struct {
 	Algorithm  asn1.ObjectIdentifier
 	Parameters pbes2Params
 }
 
 type encryptedPrivateKeyInfo struct {
-	Algo       encryptedlAlgorithmIdentifier
+	Algo       encryptedAlgorithmIdentifier
 	PrivateKey []byte
 }
 
@@ -409,7 +409,7 @@ func EncryptPKCS8PrivateKey(rand io.Reader, data, password []byte, alg x509.PEMC
 
 	// Build encrypted ans1 data
 	pki := encryptedPrivateKeyInfo{
-		Algo: encryptedlAlgorithmIdentifier{
+		Algo: encryptedAlgorithmIdentifier{
 			Algorithm: oidPBES2,
 			Parameters: pbes2Params{
 				KeyDerivationFunc: pbkdf2Algorithms{
