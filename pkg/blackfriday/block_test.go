@@ -733,8 +733,8 @@ func TestOrderedList(t *testing.T) {
 		"1. List\n\n          code block with spaces\n",
 		"<ol>\n<li><p>List</p>\n\n<pre><code>  code block with spaces\n</code></pre></li>\n</ol>\n",
 
-		"1. List\n    * Mixted list\n",
-		"<ol>\n<li>List\n\n<ul>\n<li>Mixted list</li>\n</ul></li>\n</ol>\n",
+		"1. List\n    * Mixed list\n",
+		"<ol>\n<li>List\n\n<ul>\n<li>Mixed list</li>\n</ul></li>\n</ol>\n",
 
 		"1. List\n * Mixed list\n",
 		"<ol>\n<li>List\n\n<ul>\n<li>Mixed list</li>\n</ul></li>\n</ol>\n",
@@ -1369,8 +1369,8 @@ func TestOrderedList_EXTENSION_NO_EMPTY_LINE_BEFORE_BLOCK(t *testing.T) {
 		"1. List\n\n          code block with spaces\n",
 		"<ol>\n<li><p>List</p>\n\n<pre><code>  code block with spaces\n</code></pre></li>\n</ol>\n",
 
-		"1. List\n    * Mixted list\n",
-		"<ol>\n<li>List\n\n<ul>\n<li>Mixted list</li>\n</ul></li>\n</ol>\n",
+		"1. List\n    * Mixed list\n",
+		"<ol>\n<li>List\n\n<ul>\n<li>Mixed list</li>\n</ul></li>\n</ol>\n",
 
 		"1. List\n * Mixed list\n",
 		"<ol>\n<li>List\n\n<ul>\n<li>Mixed list</li>\n</ul></li>\n</ol>\n",
