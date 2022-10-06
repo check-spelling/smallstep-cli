@@ -106,7 +106,7 @@ func WithValidateFunc(fn func(string) error) Option {
 }
 
 // WithValidateNotEmpty adds a custom validation function to a prompt that
-// checks that the propted string is not empty.
+// checks that the prompted string is not empty.
 func WithValidateNotEmpty() Option {
 	return WithValidateFunc(NotEmpty())
 }
