@@ -233,7 +233,7 @@ implements the following extensions:
 
 *   **Smart fractions**, where anything that looks like a fraction
     is translated into suitable HTML (instead of just a few special
-    cases like most smartypant processors). For example, `4/5`
+    cases like most smartypants processors). For example, `4/5`
     becomes `<sup>4</sup>&frasl;<sub>5</sub>`, which renders as
     <sup>4</sup>&frasl;<sub>5</sub>.
 
