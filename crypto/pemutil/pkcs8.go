@@ -366,7 +366,7 @@ func DecryptPKCS8PrivateKey(data, password []byte) ([]byte, error) {
 	return encryptedKey, nil
 }
 
-// EncryptPKCS8PrivateKey returns a PEM block holding the given PKCS#8 encroded
+// EncryptPKCS8PrivateKey returns a PEM block holding the given PKCS#8 encoded
 // private key, encrypted with the specified algorithm and a PBKDF2 derived key
 // from the given password.
 func EncryptPKCS8PrivateKey(rand io.Reader, data, password []byte, alg x509.PEMCipher) (*pem.Block, error) {
