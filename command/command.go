@@ -123,7 +123,7 @@ func getFlagEnvVar(f cli.Flag) string {
 	return ""
 }
 
-// setEnvVar sets the the EnvVar element to each flag recursively.
+// setEnvVar sets the EnvVar element to each flag recursively.
 func setEnvVar(c *cli.Command) {
 	if c == nil {
 		return

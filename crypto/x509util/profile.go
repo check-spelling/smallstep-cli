@@ -504,7 +504,7 @@ type subjectPublicKeyInfo struct {
 	SubjectPublicKey asn1.BitString
 }
 
-// generateSubjectKeyID generates the key identifier according the the RFC 5280
+// generateSubjectKeyID generates the key identifier according the RFC 5280
 // section 4.2.1.2.
 //
 // The keyIdentifier is composed of the 160-bit SHA-1 hash of the value of the
