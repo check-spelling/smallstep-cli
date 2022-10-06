@@ -167,7 +167,7 @@ to the value of provisioner-password-file flag.
 given a path. Default behavior is unchanged; only inspect the first (leaf)
 certificate.
 - distribution.md with documentation on how to create releases.
-- travis build and upload artifacts to Github Releases on tagged pushes.
+- travis build and upload artifacts to GitHub Releases on tagged pushes.
 - logging of invalid http requests to the oauth server
 ### Changed
 - default PEM format encryption alg AES128 -> AES256
