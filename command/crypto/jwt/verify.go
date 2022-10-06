@@ -146,7 +146,7 @@ func verifyAction(ctx *cli.Context) error {
 		kid = tok.Headers[0].KeyID
 	}
 
-	// Validate subtled
+	// Validate subtle
 	isSubtle := ctx.Bool("subtle")
 	iss := ctx.String("iss")
 	aud := ctx.String("aud")
