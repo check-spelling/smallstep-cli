@@ -395,7 +395,7 @@ func certificateAction(ctx *cli.Context) error {
 	if err := j.UnsafeClaimsWithoutVerification(&payload); err != nil {
 		return errors.Wrap(err, "err parsing token claims")
 	}
-	// If it's an OIDC token and and no principals were explicitly set ...
+	// If it's an OIDC token and no principals were explicitly set ...
 	if len(payload.Email) > 0 && !ctx.IsSet("principal") {
 		principals = []string{}
 	}
