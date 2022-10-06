@@ -126,7 +126,7 @@ $ step certificate create root-ca root-ca.crt root-ca.key --profile root-ca \
   --kty OKP --curve Ed25519
 '''
 
-Create an intermeidate certificate and key with underlying EC P-256 key pair:
+Create an intermediate certificate and key with underlying EC P-256 key pair:
 
 '''
 $ step certificate create intermediate-ca intermediate-ca.crt intermediate-ca.key \

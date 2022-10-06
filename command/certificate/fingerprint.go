@@ -47,7 +47,7 @@ $ step certificate fingerprint https://smallstep.com
 e2c4f12edfc1816cc610755d32e6f45d5678ba21ecda1693bb5b246e3c48c03d
 '''
 
-Get the fingerprints for a remote certificate with its intemediate:
+Get the fingerprints for a remote certificate with its intermediate:
 '''
 $ step certificate fingerprint --bundle https://smallstep.com
 e2c4f12edfc1816cc610755d32e6f45d5678ba21ecda1693bb5b246e3c48c03d
