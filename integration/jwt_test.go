@@ -694,7 +694,7 @@ func TestCryptoJWT(t *testing.T) {
 			jwt = mkossljwt(t, `{"typ": "JWT", "alg": "RS384"}`, `{"iss": "foo", "sub": "bar"}`, fmt.Sprintf("<(echo -en %q)", pem))
 			tst.verify.setFlag("iss", "foo").setFlag("aud", "bar").setFlag("alg", "RS384").fail(t, "wrong-alg", jwt, "alg RS384 does not match the alg on testdata-tmp/jwt-jwk-RSA-pub.json\n")
 
-			// We don't currently support JSON Serialization, Flattened JSON Serialzation, or multiple signatures
+			// We don't currently support JSON Serialization, Flattened JSON Serialization, or multiple signatures
 			// TODO: Right now these are parse failures. They should probably parse correctly and give more helpful error messages.
 			vtst := NewJWTVerifyTest(JWK{"testdata/rsa2048.pub", "testdata/rsa2048.pem", "", true, false}).setFlag("iss", "foo").setFlag("aud", "bar").setFlag("alg", "RS256")
 			jwtb, _ := os.ReadFile("testdata/jwt-json-serialization.json")
