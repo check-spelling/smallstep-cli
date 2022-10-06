@@ -24,7 +24,7 @@ import (
 const PBKDF2SaltSize = 16
 
 // PBKDF2Iterations is the default number of iterations for PBKDF2, 100k
-// iterations. Nist recommends at least 10k, 1Passsword uses 100k.
+// iterations. Nist recommends at least 10k, 1Password uses 100k.
 const PBKDF2Iterations = 100000
 
 // pkcs8 reflects an ASN.1, PKCS#8 PrivateKey. See
