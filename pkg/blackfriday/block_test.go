@@ -876,8 +876,8 @@ func TestPreformattedHtml(t *testing.T) {
 		"<div>\nAnything here\n  </div>\n",
 		"<div>\nAnything here\n  </div>\n",
 
-		"<div>\nThis is *not* &proceessed\n</div>\n",
-		"<div>\nThis is *not* &proceessed\n</div>\n",
+		"<div>\nThis is *not* &processed\n</div>\n",
+		"<div>\nThis is *not* &processed\n</div>\n",
 
 		"<faketag>\n  Something\n</faketag>\n",
 		"<p><faketag>\n  Something\n</faketag></p>\n",
