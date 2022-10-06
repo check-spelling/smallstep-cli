@@ -118,7 +118,7 @@ Uninstall a certificate from Firefox and the system trustore:
 $ step certificate uninstall --firefox root--ca.pem
 '''
 
-Uninstall a certificate infrom Java and the system trustore:
+Uninstall a certificate from Java and the system trustore:
 '''
 $ step certificate uninstall --java root-ca.pem
 '''
