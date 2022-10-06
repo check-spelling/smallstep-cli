@@ -110,7 +110,7 @@ func (j JWTSignTest) test(t *testing.T, name string) string {
 	var jwt string
 	t.Run(name, func(t *testing.T) {
 		// Beware. This is fragile as hell. Ugh. If the output or prompt for the
-		// jwt sign cubcommand changes this will need to change too.
+		// jwt sign subcommand changes this will need to change too.
 		if j.jwk.password != "" {
 			cmd, err := gexpect.Spawn(j.command.cmd())
 			assert.FatalError(t, err)
