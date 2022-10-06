@@ -15,7 +15,7 @@ import (
 	"github.com/urfave/cli"
 )
 
-func rootComand() cli.Command {
+func rootCommand() cli.Command {
 	return cli.Command{
 		Name:   "root",
 		Action: command.ActionFunc(rootAction),
