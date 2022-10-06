@@ -12,11 +12,11 @@ var ascii string
 
 func init() {
 	// initialize the charcters in ascii
-	aciiBytes := make([]byte, 94)
-	for i := range aciiBytes {
-		aciiBytes[i] = byte(i + 33)
+	asciiBytes := make([]byte, 94)
+	for i := range asciiBytes {
+		asciiBytes[i] = byte(i + 33)
 	}
-	ascii = string(aciiBytes)
+	ascii = string(asciiBytes)
 }
 
 // Salt generates a new random salt of the given size.
