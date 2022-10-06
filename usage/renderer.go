@@ -321,7 +321,7 @@ func (r *Renderer) RenderNode(w io.Writer, node *md.Node, entering bool) md.Walk
 		if entering {
 			r.capture(r.out.mode)
 		} else {
-			// Markdown doens't have a way to create a table without headers.
+			// Markdown doesn't have a way to create a table without headers.
 			// We've opted to fix that here by not rendering headers at all if
 			// they're empty.
 			result := r.finishCapture().Bytes()
