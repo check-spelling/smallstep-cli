@@ -166,7 +166,7 @@ func (r *Renderer) RenderNode(w io.Writer, node *md.Node, entering bool) md.Walk
 	switch node.Type {
 	case md.Paragraph:
 		// Alternative idea here: call r.RenderNode() with our new buffer as
-		// `w`. In the `else` condition here render to the outter buffer and
+		// `w`. In the `else` condition here render to the outer buffer and
 		// always return md.Terminate. So when we enter a paragraph we start
 		// parsing with a new output buffer and capture the output.
 		if entering {
