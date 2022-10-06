@@ -159,7 +159,7 @@ func parseDSA(in []byte) (*dsa.PublicKey, error) {
 		Rest       []byte `ssh:"rest"`
 	}
 	if err := ssh.Unmarshal(in, &w); err != nil {
-		return nil, errors.Wrap(err, "error unmarshalling public key")
+		return nil, errors.Wrap(err, "error unmarshaling public key")
 	}
 
 	param := dsa.Parameters{
@@ -181,7 +181,7 @@ func parseRSA(in []byte) (*rsa.PublicKey, error) {
 		Rest []byte `ssh:"rest"`
 	}
 	if err := ssh.Unmarshal(in, &w); err != nil {
-		return nil, errors.Wrap(err, "error unmarshalling public key")
+		return nil, errors.Wrap(err, "error unmarshaling public key")
 	}
 	if w.E.BitLen() > 24 {
 		return nil, errors.New("invalid public key: exponent too large")
@@ -206,7 +206,7 @@ func parseECDSA(in []byte) (*ecdsa.PublicKey, error) {
 	}
 
 	if err := ssh.Unmarshal(in, &w); err != nil {
-		return nil, errors.Wrap(err, "error unmarshalling public key")
+		return nil, errors.Wrap(err, "error unmarshaling public key")
 	}
 
 	key := new(ecdsa.PublicKey)
@@ -237,7 +237,7 @@ func parseED25519(in []byte) (ed25519.PublicKey, error) {
 	}
 
 	if err := ssh.Unmarshal(in, &w); err != nil {
-		return nil, errors.Wrap(err, "error unmarshalling public key")
+		return nil, errors.Wrap(err, "error unmarshaling public key")
 	}
 
 	return ed25519.PublicKey(w.KeyBytes), nil
