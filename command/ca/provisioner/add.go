@@ -135,7 +135,7 @@ Use the flag multiple times to configure multiple accounts.`,
 			cli.StringSliceFlag{
 				Name: "azure-resource-group",
 				Usage: `The Microsoft Azure resource group <name> used to validate the identity tokens.
-Use the flag multipl etimes to configure multiple resource groups`,
+Use the flag multiple times to configure multiple resource groups`,
 			},
 			cli.StringSliceFlag{
 				Name: "gcp-service-account",
@@ -145,7 +145,7 @@ Use the flag multiple times to configure multiple service accounts.`,
 			cli.StringSliceFlag{
 				Name: "gcp-project",
 				Usage: `The Google project <id> used to validate the identity tokens.
-Use the flag multipl etimes to configure multiple projects`,
+Use the flag multiple times to configure multiple projects`,
 			},
 			cli.DurationFlag{
 				Name: "instance-age",
