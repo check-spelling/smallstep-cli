@@ -156,7 +156,7 @@ unit suffix, such as "300ms", "-1.5h" or "2h45m". Valid time units are "ns",
 			},
 			cli.BoolFlag{
 				Name: "disable-custom-sans",
-				Usage: `On cloud provisioners, if anabled only the internal DNS and IP will be added as a SAN.
+				Usage: `On cloud provisioners, if enabled only the internal DNS and IP will be added as a SAN.
 By default it will accept any SAN in the CSR.`,
 			},
 			cli.BoolFlag{
