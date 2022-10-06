@@ -236,7 +236,7 @@ $ step ca provisioner add Google --type oidc --ca-config ca.json \
   --domain smallstep.com
 '''
 
-Add an AWS provisioner on one account with a one hour of intance age:
+Add an AWS provisioner on one account with a one hour of instance age:
 '''
 $ step ca provisioner add Amazon --type AWS --ca-config ca.json \
   --aws-account 123456789 --instance-age 1h
@@ -495,7 +495,7 @@ func addOIDCProvisioner(ctx *cli.Context, name string, provMap map[string]bool) 
 }
 
 func addAWSProvisioner(ctx *cli.Context, name string, provMap map[string]bool) (list provisioner.List, err error) {
-	d, err := parseIntaceAge(ctx)
+	d, err := parseInstanceAge(ctx)
 	if err != nil {
 		return nil, err
 	}
@@ -549,7 +549,7 @@ func addAzureProvisioner(ctx *cli.Context, name string, provMap map[string]bool)
 }
 
 func addGCPProvisioner(ctx *cli.Context, name string, provMap map[string]bool) (list provisioner.List, err error) {
-	d, err := parseIntaceAge(ctx)
+	d, err := parseInstanceAge(ctx)
 	if err != nil {
 		return nil, err
 	}
@@ -730,7 +730,7 @@ func getClaims(ctx *cli.Context) *provisioner.Claims {
 	return nil
 }
 
-func parseIntaceAge(ctx *cli.Context) (provisioner.Duration, error) {
+func parseInstanceAge(ctx *cli.Context) (provisioner.Duration, error) {
 	age := ctx.Duration("instance-age")
 	if age == 0 {
 		return provisioner.Duration{}, nil
