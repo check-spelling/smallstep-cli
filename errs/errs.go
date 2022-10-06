@@ -270,7 +270,7 @@ func RequiredWithOrFlag(ctx *cli.Context, withFlag string, flags ...string) erro
 	return errors.Errorf("one of flag %s is required with flag --%s", strings.Join(params, " or "), withFlag)
 }
 
-// MinSizeFlag returns an error with a greater or equal message message for
+// MinSizeFlag returns an error with a greater or equal than message for
 // the given flag and size.
 func MinSizeFlag(ctx *cli.Context, flag string, size string) error {
 	return errors.Errorf("flag '--%s' must be greater or equal than %s", flag, size)
