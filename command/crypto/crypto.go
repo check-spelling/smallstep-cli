@@ -111,7 +111,7 @@ risks. That said, many of these factors are beyond the scope of this tool.
    opted not to gate non-safe curves**. We've further elected to make **P-256**
    the default curve for EC keys.
 
-:  Still, it is important to be aware of the security risks assocated with their
+:  Still, it is important to be aware of the security risks associated with their
    risk. You should consider using "safe curves" if possible. We may change our
    mind as support for safe curves improves.
 
