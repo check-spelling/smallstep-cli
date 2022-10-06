@@ -11,7 +11,7 @@ import (
 var ascii string
 
 func init() {
-	// initialize the charcters in ascii
+	// initialize the characters in ascii
 	asciiBytes := make([]byte, 94)
 	for i := range asciiBytes {
 		asciiBytes[i] = byte(i + 33)
