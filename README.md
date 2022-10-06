@@ -30,7 +30,7 @@ Here's a quick example, combining `step oauth` and `step crypto` to get and veri
 Step CLI's command groups illustrate some of its uses:
 - [`step certificate`](https://smallstep.com/docs/cli/certificate/): Work with X.509 (TLS/HTTPS) certificates.
   - Create, revoke, validate, lint, and bundle X.509 certificates.
-  - Install (and remove) X.509 certificates into your system's (and brower's) trust store.
+  - Install (and remove) X.509 certificates into your system's (and browser's) trust store.
   - Create key pairs (RSA, ECDSA, EdDSA) and certificate signing requests (CSRs)
   - [Sign CSRs](https://smallstep.com/docs/cli/certificate/sign/)
   - Create [RFC5280](https://tools.ietf.org/html/rfc5280) and [CA/Browser Forum](https://cabforum.org/baseline-requirements-documents/)-compliant certificates that work for TLS and HTTPS
