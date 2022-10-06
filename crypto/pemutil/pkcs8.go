@@ -240,7 +240,7 @@ func ParsePKIXPublicKey(derBytes []byte) (pub interface{}, err error) {
 
 // MarshalPKIXPublicKey serializes a public key to DER-encoded PKIX format. The
 // following key types are supported: *rsa.PublicKey, *ecdsa.PublicKey,
-// ed25519.Publickey. Unsupported key types result in an error.
+// ed25519.PublicKey. Unsupported key types result in an error.
 func MarshalPKIXPublicKey(pub interface{}) ([]byte, error) {
 	switch p := pub.(type) {
 	case *rsa.PublicKey, *ecdsa.PublicKey:
