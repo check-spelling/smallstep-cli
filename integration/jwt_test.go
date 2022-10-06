@@ -713,7 +713,7 @@ func TestCryptoJWT(t *testing.T) {
 			t.Run("nbf", func(t *testing.T) {
 				tst := mkjwt(jwkec)
 				jwt := tst.nbf(extraTime).sign.test(t, "sign")
-				tst.verify.fail(t, "verify-tosoon", jwt, "validation failed: token not valid yet (nbf)\n")
+				tst.verify.fail(t, "verify-too-soon", jwt, "validation failed: token not valid yet (nbf)\n")
 				time.Sleep(extraTime)
 				tst.verify.test(t, "verify-succeed", jwt)
 				if t.Failed() {
