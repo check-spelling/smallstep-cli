@@ -177,7 +177,7 @@ jobs:
           token: ${{ secrets.DOCS_PAT }}
           path: './docs'
       - name: Update Reference
-        id: update_refrence
+        id: update_reference
         run: |
           ./bin/step help --markdown ./docs/src/pages/docs/step-cli/reference
           cd ./docs
