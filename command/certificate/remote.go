@@ -57,7 +57,7 @@ func getPeerCertificates(addr, serverName, roots string, insecure bool) ([]*x509
 // empty string (and 'isURL:false').
 //
 // Examples:
-// trimURL("https://smallstep.com/onbaording") -> "smallstep.com", true, nil
+// trimURL("https://smallstep.com/onboarding") -> "smallstep.com", true, nil
 // trimURL("https://ca.smallSTEP.com:8080") -> "ca.smallSTEP.com:8080", true, nil
 // trimURL("./certs/root_ca.crt") -> "", false, nil
 // trimURL("hTtPs://sMaLlStEp.cOm") -> "sMaLlStEp.cOm", true, nil
