@@ -154,7 +154,7 @@ func PromptPassword(label string, opts ...Option) ([]byte, error) {
 	return []byte(pass), nil
 }
 
-// PromptPasswordGenerate creaes a runs a promptui.Prompt with the given label.
+// PromptPasswordGenerate creates a runs a promptui.Prompt with the given label.
 // This prompt will mask the key entries with \r. If the result password length
 // is 0, it will generate a new prompt with a generated password that can be
 // edited.
