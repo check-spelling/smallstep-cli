@@ -12,7 +12,7 @@ import (
 	"go.step.sm/linkedca"
 )
 
-// nodb implements the certificates/Admiclient interface with noops.
+// nodb implements the certificates/Adminclient interface with noops.
 type nodb struct{}
 
 func newNoDB() *nodb {
