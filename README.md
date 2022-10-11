@@ -1,3 +1,5 @@
+Test
+
 # Step CLI
 
 [![GitHub release](https://img.shields.io/github/release/smallstep/cli.svg)](https://github.com/smallstep/cli/releases)
